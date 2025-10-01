@@ -13,7 +13,7 @@ def geocode_address():
     url = "https://maps.googleapis.com/maps/api/geocode/json"
     params = {
         "address": address,
-        "key": current_app.config["AIzaSyBK1HX6EFTRuRDsvY1WNhMDvvbIEMC2cdw"]
+        "key": current_app.config["Google API Key"]
     }
     try:
         resp = requests.get(url, params=params, timeout=10)
